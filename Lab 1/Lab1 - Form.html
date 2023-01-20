@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <header>Form Validation</header>
+    <form action="#">
+        <label>Name</label>
+        <input type="text" class="textbox" placeholder="Jane Doe">
+        <br>
+        <label>Email</label>
+        <input type="email" class="textbox" placeholder="example@domain.com">
+        <br>
+        <label>Password</label>
+        <input type="password" class="textbox" placeholder="*********">
+        <br>
+        <label>Country</label>
+        <input list="counrties" name="country" class="textbox" placeholder="Choose Counrty">
+        <datalist id="counrties">
+            <option value="Egypt">
+            <option value="US">
+            <option value="UK">
+            <option value="Australia">
+        </datalist>
+        <br>
+        <label>Salary</label>
+        <input type="range" name="salaryVal" class="rangebar" min="100" max="600" step="100" oninput="salary.value = salaryVal.value+'$'">
+        <output name="salary"></output>
+        <br>
+        <label>Age</label >
+        <input type="number" class="textbox" min="18" max="35" step="1" placeholder="18-35">
+        <br>
+        <input type="submit" class="submit">
+    </form>
+</body>
+</html>
