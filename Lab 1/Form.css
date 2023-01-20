@@ -10,22 +10,32 @@ form {
     margin: auto;
     margin-top: 1rem;
     padding: 1rem;
-
 }
+
 form label {
     display: inline-block;
-    width: 10rem;
+    width: 5rem;
     padding: 5px;
 }
-.textbox {
+form input[type*="text"], form input[type*="email"], form input[type*="password"], form input[type*="number"], form input[name*="country"] {
     display: inline-block;
     width: 20rem;
 }
+form input[type*="range"] {
+    display: inline-block;
+    width: 15rem;
+}
+form input[type*="submit"] {
+    background-color: rgb(39, 183, 39);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+}
 .rangebar {
     display: inline-block
-    width = 15rem;
+    width: 15rem;
 }
-.submit {
-    display: inline-block;
-    align: right;
+.submit-div {
+    padding: 5px;
+    text-align: right;
 }
