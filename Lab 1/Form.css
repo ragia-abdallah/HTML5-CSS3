@@ -1,14 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: conic-gradient(#f8cae7, #cdc2e7, #caf1f8, #686666, #c3c6c6);
+}
 header {
-    margin: 0.5vw;
-    background-color: rgb(34, 140, 34);
+    margin-top: 0.5vw;
+    background-color: rgb(0, 0, 0);
+    color: bisque;
     text-align: center;
     font-size: 3rem;
 }
+section {
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 25px;
+    background-color: black;
+    margin: auto;
+    margin-top: 3rem;
+}
 form {
     width: fit-content;
-    border: 2px solid black;
-    margin: auto;
-    margin-top: 1rem;
+    border-radius: 25px;
+    background-color: #caf1f8;
     padding: 1rem;
 }
 

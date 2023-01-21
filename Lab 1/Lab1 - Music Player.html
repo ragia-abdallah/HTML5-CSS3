@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div>
+            <audio src="Media/Elfen Lied 'Lilium'.mp3" controls id="aud1" autoplay></audio>
+            <!-- <audio src="Media/Elfen Lied 'Lilium'.mp3" controls id="aud2"></audio> -->
+        </div>
+        <div id="controls">
+            <button id="playBtn">
+                Play
+            </button>
+            <button id="pauseBtn">
+                Pause
+            </button>
+            <button id="rewindBtn">
+                Rewind
+            </button>
+            <button id="nextBtn">
+                Play Next
+            </button>
+            <button id="shuffleBtn">
+                Shuffle
+            </button>
+            <button id="resetBtn">
+                Start Over
+            </button>
+        </div>
+        <div>
+            <details>
+                <summary>
+                    Add Songs:
+                </summary>
+                <label>Song 1</label>
+                <button>Add</button>
+                <br>
+                <label>Song 2</label>
+                <button>Add</button>
+                <br>
+                <label>Song 3</label>
+                <button>Add</button>
+                <br>
+                <label>Song 4</label>
+                <button>Add</button>
+                <br>
+                <label>Song 5</label>
+                <button>Add</button>            
+            </details>
+            <div class="queued-song" id="qdsong1">
+                <label>Song 1</label>
+                <button>Remove</button>
+            </div>
+            <div class="queued-song" id="qdsong2">
+                <label>Song 2</label>
+                <button>Remove</button>
+            </div>
+            <div class="queued-song" id="qdsong3">
+                <label>Song 3</label>
+                <button>Remove</button>
+            </div>
+            <div class="queued-song" id="qdsong4">
+                <label>Song 4</label>
+                <button>Remove</button>
+            </div>
+            <div class="queued-song" id="qdsong5">
+                <label>Song 5</label>
+                <button>Remove</button>
+            </div>
+            <div class="queued-song" id="qdsong6">
+                <label>Song 6</label>
+                <button>Remove</button>
+            </div>
+        </div>
+    </section>
+    <!-- <aside>
+        <details open>
+            <summary>
+                Available Songs:
+            </summary>
+            <label>Song 1</label>
+            <button>Add</button>
+            <br>
+            <label>Song 2</label>
+            <button>Add</button>
+            <br>
+            <label>Song 3</label>
+            <button>Add</button>
+            <br>
+            <label>Song 4</label>
+            <button>Add</button>
+            <br>
+            <label>Song 5</label>
+            <button>Add</button>            
+        </details>
+    </aside> -->
+    <script src="Music Player.js"></script>
+</body>
+</html>

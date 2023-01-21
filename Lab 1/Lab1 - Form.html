@@ -9,35 +9,37 @@
 </head>
 <body>
     <header>Form Validation</header>
-    <form action="#">
-        <label>Name</label>
-        <input type="text" class="textbox" placeholder="Jane Doe">
-        <br>
-        <label>Email</label>
-        <input type="email" class="textbox" placeholder="example@domain.com">
-        <br>
-        <label>Password</label>
-        <input type="password" class="textbox" placeholder="*********">
-        <br>
-        <label>Country</label>
-        <input list="counrties" name="country" class="textbox" placeholder="Choose Counrty">
-        <datalist id="counrties">
-            <option value="Egypt">
-            <option value="US">
-            <option value="UK">
-            <option value="Australia">
-        </datalist>
-        <br>
-        <label>Salary</label>
-        <input type="range" name="salaryVal" class="rangebar" min="100" max="600" step="100" oninput="salary.value = salaryVal.value+'$'">
-        <output name="salary"></output>
-        <br>
-        <label>Age</label >
-        <input type="number" class="textbox" min="18" max="35" step="1" placeholder="18-35">
-        <br>
-        <div class="submit-div">
-            <input type="submit">
-        </div>
-    </form>
+    <section>
+        <form action="#">
+            <label>Name</label>
+            <input type="text" placeholder="Jane Doe" required>
+            <br>
+            <label>Email</label>
+            <input type="email" placeholder="example@domain.com" required>
+            <br>
+            <label>Password</label>
+            <input type="password" placeholder="At least 8 characters" minlength="8">
+            <br>
+            <label>Country</label>
+            <input list="counrties" name="country" placeholder="Choose Counrty">
+            <datalist id="counrties">
+                <option value="Egypt">
+                <option value="US">
+                <option value="UK">
+                <option value="Australia">
+            </datalist>
+            <br>
+            <label>Salary</label>
+            <input type="range" name="salaryVal" min="100" max="600" step="100" oninput="salary.value = salaryVal.value+'$'">
+            <output name="salary"></output>
+            <br>
+            <label>Age</label >
+            <input type="number" min="21" step="1" placeholder="21 and above">
+            <br>
+            <div class="submit-div">
+                <input type="submit">
+            </div>
+        </form>
+    </section>
 </body>
 </html>
